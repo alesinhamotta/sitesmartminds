@@ -1,0 +1,47 @@
+#footer-nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dotted grey;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+#footer-nav ul {
+    list-style: none;
+    padding-left: 1rem;
+    line-height: 1.6;
+}
+
+#footer-nav ul a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;    
+}
+
+/* Quando passar o cursor sobre o link */
+#footer-nav ul a:hover {
+    color: orange;
+}
+
+/*
+Media Query para larguras de 576px  ou mais 
+*/
+@media screen and (min-width: 576px) {
+
+    /* Ajusta a posição dos menus */
+    #footer-nav {
+        justify-content: space-around;
+    }
+}
+
+/* Imagem de fundo */
+body {
+    background-image: url('../img/background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+}

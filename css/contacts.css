@@ -1,0 +1,12 @@
+/* Botão do formulário de contatos */
+#contact-form:invalid button {
+    pointer-events: none;
+    background-color: grey;
+    border: none;
+}
+
+/* Mais contatos */
+.plus-list-group i {
+    font-size: 2rem;
+    margin-right: .75rem;
+}

@@ -1,2 +1,2 @@
-# FrontEnders
-Aplicativo front-end usando BootStrap da turma CG 2025.1 Py.
+# Site Smart Minds Mkt Digital
+Site front-end usando BootStrap/HTML/CSS/JS 

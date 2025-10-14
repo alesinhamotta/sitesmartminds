@@ -17,19 +17,18 @@
     <!-- Ícone favoritos -->
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <!-- CSS desta página -->
-     <link rel="stylesheet" href="css/contacts.css">
-
-    <title>FrontEnders - Faça Contato</title>
+    <title>Smart Minds - Faça Contato</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
     <a id="top"></a>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="bi bi-code-square"></i> FrontEnders</a>
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightbulb-fill"></i> Smart Minds
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -66,21 +65,34 @@
 
     <main class="mt-5 pt-4 container flex-grow-1">
 
+        <h2 class="text-center mb-5 section-title">Faça Contato</h2>
+
         <div class="d-flex flex-column flex-md-row">
 
             <!-- Formulário de contatos e Feedback -->
             <div class="flex-grow-1 col-md-7 col-lg-8">
 
-                <h2>Faça Contato</h2>
+                <div class="contact-intro mb-4">
+                    <p class="lead">
+                        Estamos aqui para ouvir você! Se você tem uma ideia, um projeto em mente ou simplesmente 
+                        deseja saber mais sobre nossos serviços, preencha o formulário abaixo e entraremos em contato 
+                        o mais breve possível.
+                    </p>
+                    <p>
+                        Na <strong>Smart Minds Marketing Digital</strong>, valorizamos cada contato e estamos 
+                        comprometidos em oferecer soluções personalizadas que atendam às suas necessidades específicas. 
+                        Vamos juntos transformar sua presença digital!
+                    </p>
+                </div>
 
-                <form action="https://www.w3schools.com/bootstrap5/action_page.php" class="was-validated mb-4"
+                <form action="https://www.w3schools.com/bootstrap5/action_page.php" class="was-validated mb-4 contact-form"
                     id="contact-form">
-
-                    <p>Preencha todos os campos para entrar em contato com o <em>FrontEnders</em>.</p>
 
                     <!-- Nome -->
                     <div class="mb-3 mt-3">
-                        <label for="cnt-name" class="form-label">Nome:</label>
+                        <label for="cnt-name" class="form-label">
+                            <i class="bi bi-person-fill me-2"></i>Nome:
+                        </label>
                         <input type="text" class="form-control form-control-lg" id="cnt-name"
                             placeholder="Seu nome completo" name="cnt-name" required minlength="2">
                         <div class="valid-feedback">&nbsp;</div>
@@ -89,33 +101,41 @@
 
                     <!-- E-mail -->
                     <div class="mb-3 mt-3">
-                        <label for="cnt-email" class="form-label">E-mail:</label>
+                        <label for="cnt-email" class="form-label">
+                            <i class="bi bi-envelope-fill me-2"></i>E-mail:
+                        </label>
                         <input type="email" class="form-control form-control-lg" id="cnt-email"
-                            placeholder="Seu e-mail principal." name="cnt-email" required>
+                            placeholder="Seu e-mail principal" name="cnt-email" required>
                         <div class="valid-feedback">&nbsp;</div>
                         <div class="invalid-feedback">Preencha seu e-mail.</div>
                     </div>
 
                     <!-- Assunto -->
                     <div class="mb-3 mt-3">
-                        <label for="cnt-subject" class="form-label">Assunto:</label>
+                        <label for="cnt-subject" class="form-label">
+                            <i class="bi bi-tag-fill me-2"></i>Assunto:
+                        </label>
                         <input type="text" class="form-control form-control-lg" id="cnt-subject"
-                            placeholder="Assunto do contato." name="cnt-subject" required minlength="3">
+                            placeholder="Assunto do contato" name="cnt-subject" required minlength="3">
                         <div class="valid-feedback">&nbsp;</div>
                         <div class="invalid-feedback">Preencha o assunto.</div>
                     </div>
 
                     <!-- Mensagem -->
                     <div class="mb-3 mt-3">
-                        <label for="cnt-message" class="form-label">Mensagem:</label>
+                        <label for="cnt-message" class="form-label">
+                            <i class="bi bi-chat-dots-fill me-2"></i>Mensagem:
+                        </label>
                         <textarea class="form-control form-control-lg" id="cnt-message"
-                            placeholder="Digite sua mensagem." name="cnt-message" required minlength="4"
-                            rows="4"></textarea>
+                            placeholder="Digite sua mensagem" name="cnt-message" required minlength="4"
+                            rows="5"></textarea>
                         <div class="valid-feedback">&nbsp;</div>
                         <div class="invalid-feedback">Escreva sua mensagem.</div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
+                    </button>
                 </form>
 
             </div>
@@ -123,48 +143,72 @@
             <!-- Outras formas de contato -->
             <div class="mb-3 col-md-5 col-lg-4 ps-md-5">
 
-<h3><i class="bi bi-plus-lg"></i> Contatos</h3>
-<p>Você também pode nos conhecer ou entrar em contato pelas redes sociais e links abaixo:</p>
+                <h3 class="contact-sidebar-title">
+                    <i class="bi bi-chat-square-text-fill me-2"></i>Outras Formas de Contato
+                </h3>
+                <p>
+                    Você também pode nos conhecer ou entrar em contato pelas redes sociais e links abaixo. 
+                    Estamos sempre disponíveis para conversar!
+                </p>
 
+                <div class="list-group contact-list-group">
+                    <a href="https://www.instagram.com/smartminds_mktdigital?igsh=MXdzM3hsdHZ4Nzdi" 
+                       class="list-group-item list-group-item-action d-flex align-items-center" 
+                       target="_blank">
+                        <i class="bi bi-instagram me-3" style="color:#fd1d1d; font-size: 1.5rem;"></i> 
+                        <span>Instagram</span>
+                    </a>
+                    
+                    <a href="mailto:smartminds.mktdigital@gmail.com" 
+                       class="list-group-item list-group-item-action d-flex align-items-center">
+                        <i class="bi bi-envelope-at-fill me-3" style="color: var(--accent-cyan); font-size: 1.5rem;"></i> 
+                        <span>smartminds.mktdigital@gmail.com</span>
+                    </a>
+                </div>
 
-  <div class="list-group plus-list-group">
-    <a href="https://facebook.com" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-facebook" style="color:#1877f2"></i> <span>Facebook</span></a>
-    <a href="https://instagram.com" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-instagram" style="color:#fd1d1d"></i> <span>Instagram</span></a>
-    <a href="https://youtube.com" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-youtube" style="color: #ff0000;"></i> <span>Youtube</span></a>
-    <a href="https://github.com/Luferat" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-github" style="color: #4078c0;"></i> <span>GitHub</span></a>
-
-    <!-- Link para e-mail -->
-    <a href="mailto:joca@frontenders.com" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-envelope-at-fill"></i> <span>joca@frontenders.com</span></a>
-    <a href="https://api.whatsapp.com/send?phone=5521998877665&text=Contato%20com%20FrontEnders" class="list-group-item list-group-item-action d-flex align-items-center" target="_blank"><i class="bi bi-whatsapp" style="color: #075e54;"></i> <span>WhatsApp</span></a>
-  </div>
+                <!-- Informações Adicionais -->
+                <div class="contact-info-box mt-4 p-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-info-circle-fill me-2"></i>Informações
+                    </h5>
+                    <p class="mb-2">
+                        <i class="bi bi-clock-fill me-2"></i>
+                        <strong>Horário de Atendimento:</strong><br>
+                        Segunda a Sexta: 9h às 18h
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        <strong>Localização:</strong><br>
+                        Atendimento Online
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-lightning-fill me-2"></i>
+                        <strong>Tempo de Resposta:</strong><br>
+                        Até 24 horas úteis
+                    </p>
+                </div>
 
             </div>
 
         </div>
 
-
     </main>
 
-    <footer class="bg-dark text-light p-3">
+    <footer class="text-light p-3">
         <div class="container" id="footer-copyr">
             <a href="index.html" title="Ir para a página inicial"><i class="bi bi-house-fill"></i></a>
-            <div class="text-center">&copy; 2025 Joca da Silva</div>
+            <div class="text-center">&copy; 2025 Smart Minds Marketing Digital</div>
             <a href="#top" title="Ir para o topo desta página"><i class="bi bi-arrow-up-circle-fill"></i></a>
         </div>
-
 
         <div class="container" id="footer-nav">
             <div id="footer-social">
                 <nav>
                     <h5>Redes Sociais:</h5>
                     <ul>
-                        <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
-                        </li>
-                        <li><a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i>
+                        <li><a href="https://www.instagram.com/smartminds_mktdigital?igsh=MXdzM3hsdHZ4Nzdi" target="_blank"><i class="bi bi-instagram"></i>
                                 Instagram</a></li>
-                        <li><a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i> Youtube</a></li>
-                        <li><a href="https://github.com/Luferat" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-                        </li>
+                        <li><a href="mailto:smartminds.mktdigital@gmail.com"><i class="bi bi-envelope-fill"></i> Email</a></li>
                     </ul>
                 </nav>
             </div>
@@ -182,9 +226,8 @@
         </div>
     </footer>
 
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
